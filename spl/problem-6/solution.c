@@ -2,19 +2,19 @@
 
 int main()
 {
-    int i, j, n, k = 1;
+    int marks[100];
+    int i, j, n, total = 0;
 
-    printf("input number: ");
     scanf("%d", &n);
 
-
-    for(i = 2; i <= n - 1; i++){
-        if(i % 2 == 0){
-            printf("%d is not a prime number", i);
-        }else {
-            printf("%d is a prime number", i);
-        }
-
-        printf("\n");
+    for(i = 1; i <= n; i++){
+        scanf("%d", &marks[i-1]);
     }
+
+    for(j = 1; j <= n; j++){
+        total = total + marks[j - 1];
+    }
+
+    float average = total / n;
+    printf("%f", average);
 }

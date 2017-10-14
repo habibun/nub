@@ -1,1 +1,5 @@
-from input value find prime number
+input: 
+1. total student
+2. marks
+
+calculate average mark
