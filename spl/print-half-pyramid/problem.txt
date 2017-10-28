@@ -1,0 +1,10 @@
+print half pyramid using *:
+
+
+example:
+n = 4
+
+1 *
+2 **
+3 ***
+4 ****

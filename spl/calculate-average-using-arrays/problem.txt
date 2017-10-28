@@ -1,5 +1,5 @@
+Calculate Average Using Arrays:
+
 input: 
 1. total student
 2. marks
-
-calculate average mark

@@ -1,0 +1,4 @@
+Check Whether a Number is Even or Odd
+
+input:
+A Number
