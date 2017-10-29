@@ -1,0 +1,2 @@
+Write code to determine the smallest number among three numbers.
+
