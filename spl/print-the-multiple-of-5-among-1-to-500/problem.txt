@@ -1,0 +1,1 @@
+Write code to print the multiple of 5 among 1 to 500.
