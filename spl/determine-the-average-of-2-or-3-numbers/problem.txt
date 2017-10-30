@@ -1,0 +1,1 @@
+Write code to determine the average of 2 or 3 numbers.
