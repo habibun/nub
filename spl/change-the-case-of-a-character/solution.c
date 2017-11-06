@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 void main()
 {
@@ -14,12 +13,11 @@ void main()
     sentence[i] = '\0';
     /*  shows the number of chars accepted in a sentence */
     count = i;
-    printf("The given sentence is   : %s", sentence);
-    printf("\n Case changed sentence is: ");
+    printf("The given sentence is : %s", sentence);
+    printf("\nCase changed sentence is : ");
     for (i = 0; i < count; i++)
     {
-        ch = islower(sentence[i])? toupper(sentence[i]) :
-tolower(sentence[i]);
+        ch = islower(sentence[i])? toupper(sentence[i]) : tolower(sentence[i]);
         putchar(ch);
     }
 }
