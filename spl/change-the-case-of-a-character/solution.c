@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 void main()
 {
@@ -18,8 +17,7 @@ void main()
     printf("\n Case changed sentence is: ");
     for (i = 0; i < count; i++)
     {
-        ch = islower(sentence[i])? toupper(sentence[i]) :
-tolower(sentence[i]);
+        ch = islower(sentence[i])? toupper(sentence[i]) : tolower(sentence[i]);
         putchar(ch);
     }
 }
