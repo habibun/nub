@@ -10,7 +10,7 @@ int main()
     double num, root;
 
     /* Input a number from user */
-    printf("Enter any number to find square root: ");
+    printf("Enter any number to find cube root: ");
     scanf("%lf", &num);
 
     /* Calculate square root of num */
