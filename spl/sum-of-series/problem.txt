@@ -1,0 +1,3 @@
+calculate the sum of following series:
+
+3+6+9+---------------n
