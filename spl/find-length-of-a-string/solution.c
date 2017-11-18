@@ -13,7 +13,7 @@ int main()
     }
 
 
-    printf("Length of a string is : %d \n", length);
+    printf("Length of string is : %d \n", length);
 
     return 0;
 }
