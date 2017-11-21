@@ -1,26 +1,22 @@
-/**
- * C program to find first and last digit of a number
- */
-
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int n, firstDigit, lastDigit, digits;
+    int num, firstDigit, lastDigit, test;
+    double digits = 10.1;
 
     /* Input a number from user */
     printf("Enter any number: ");
-    scanf("%d", &n);
-
-    /* Find last digit */
-    lastDigit = n % 10;     
-
-    /* Total number of digits - 1 */
-    digits = (int)log10(n); 
+    scanf("%d", &num);
 
     /* Find first digit */
-    firstDigit = (int)(n / pow(10, digits)); 
+    firstDigit = num;
+    while(firstDigit >= 10){
+        firstDigit = firstDigit / 10;
+    }
+
+    /* Find last digit */
+    lastDigit = num % 10;
 
     printf("First digit = %d\n", firstDigit);
     printf("Last digit = %d\n", lastDigit);

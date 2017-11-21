@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511155267 source:/home/habibun/Projects/PhpstormProjects/nub/test/main.c
+	<stdio.h>
+	<stdlib.h>
+
