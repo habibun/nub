@@ -1,9 +1,0 @@
-find maximum and minimum element in array:
-
-input:
-number range
-number
-
-example: 
-10
-2 8 5 9 1 6 42 8 4

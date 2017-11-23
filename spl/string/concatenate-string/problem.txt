@@ -1,0 +1,8 @@
+Problem: Concatenate Strings 
+
+
+description:
+Write a computer program that takes two strings S1, S2 as input. The program will insert the string S2 after the
+string S1 to produce a concatenated string S3. The program will output S3. Example input/outputs:
+Input: S1=“Hello”, S2=“World”
+Output: “HelloWorld” 
