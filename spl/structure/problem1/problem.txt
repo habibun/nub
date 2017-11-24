@@ -1,0 +1,9 @@
+Find the id who got lowest mark.
+
+
+instruction:
+1. input number of students
+2. declare array of structures
+3. input id and marks
+4. find the id who got lowest mark
+5. return id
