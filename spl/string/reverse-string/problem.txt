@@ -1,1 +1,5 @@
-C Program to Reverse String
+Problem: Reverse Sentence!
+Write a computer program that takes a string S, and output the reversed string. Example input/output are following:
+Input: Hello
+Output: olleH
+

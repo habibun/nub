@@ -1,0 +1,14 @@
+Problem: More about concatenate
+Write a computer program, that will take two strings, S1 and S2 as input. The program will also ask the user for a
+integer number N. The program will do the following:
+If N<=0, then the program will concatenate S2, S1 to produce another string.
+If N>=length(S1), then the program will concatenate S1, S2 to produce another string.
+Otherwise, the program will insert S2 after the N-th character of S1 to produce another string.
+Example input/output are:
+S1=“MADAM”
+S2=”mam”
+N= -2, output: “mamMADAM”
+N= 10, output: “MADAMmam”
+N=3, output:”MADmamAM”
+N=1, output:”MmamDAM”
+
