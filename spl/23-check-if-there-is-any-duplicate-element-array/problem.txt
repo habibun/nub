@@ -1,0 +1,1 @@
+Write a program in C to check if there is any duplicate element.
