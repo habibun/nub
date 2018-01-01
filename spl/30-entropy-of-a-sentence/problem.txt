@@ -1,0 +1,6 @@
+Problem: Entropy of a Sentence!
+Suppose, we define entropy of a sentence as the sum of ASCII values of all the alphanumeric characters in the
+string. Suppose, the string is “I am Adam”, entropy = 73+97+109+65+100+97+109=650. Note that, the spaces,
+punctuations are not counted for computing the entropy.
+Write a computer program, that will take a string S, and compute the value of entropy of S.
+
