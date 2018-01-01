@@ -1,0 +1,5 @@
+Problem: Palindrome!
+A string is palindrome if it is same when read from left-to-right or right-to-left. Some examples of palindrome
+strings are “madam”, “dad”, “amma”, “abba”.
+Now, write a computer program, that takes an input string S, and output whether S is a palindrome.
+
