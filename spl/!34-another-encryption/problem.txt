@@ -1,0 +1,10 @@
+Problem: Another Encryption.
+Write a computer program, that takes three strings S1, S2, S3 as input. The program will encrypt the text in S1. The
+encryption technique is: Suppose, a character is S1 is X. The program will then find X’s nearest matching character
+(nearest matching character will be the character whose ASCII value and X’s ASCII value have lowest difference, in
+case there are multiple characters, take the first one that appears in S2) in string S2. Suppose, the nearest matching
+character’s position is N. Then, the program will find the N-th character in the string S3 (if N is greater than the
+length of the string S3, rotate the value N) and suppose this character is Y. The program will then replace X in string
+S1 with Y from string S3. In this way, all characters in S1 are replaced by a character from S3. The program will
+output the produced string.
+

@@ -1,0 +1,8 @@
+Problem: Phrase Palindrome!
+There are some phrases (in fact, sentences) which are palindromes if you ignore the whitespace, punctuations, etc.
+and also ignore the case. For example, “Eva, can I stab bats in a cave?”. This phrase is a palindrome if you discard
+te spaces, punctuations and case of letters. Some such examples are: "Mr. Owl ate my metal worm.", "Was it a ratsaw?", "A nut for a jar of tuna", "Ma is as selfless as I am", "Dammit, I'm mad!", and "A Santa lived as a devil at
+NASA".
+I
+Now, write a computer program, that takes a string S, then output whether S is a phrase palindrome.
+
