@@ -1,0 +1,10 @@
+Problem: Encrypt the CodeWord.
+In earlier history, people often used different techniques to send messages so that only the intended recipient can
+decipher the meaning. One such technique was to shift each character in a message by T positions. For example, if
+the message is “Go to Hell” and T=5, then the converted message will be “Lt yt Mjqq”. Here, ‘G’ is shifted to 5
+positions forward and the result is ‘L’ and other characters are similarly converted. Note that, if the character is ‘Z’,
+then shifting it 5 positions will produce ‘E’ (which is a rotate in fact). Also note that, uppercase letters are kept as
+uppercase and lowercase letter are also kept as lowercase.
+Now, write a computer program that will take an input string S and an integer number T. The program will output
+the encrypted text.
+
