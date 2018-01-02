@@ -1,4 +1,6 @@
-Problem: Reverse Sentence!
+Write a program in C to reverse the given string.**
+
+******
 Write a computer program that takes a string S, and output the reversed string. Example input/output are following:
 Input: Hello
 Output: olleH
