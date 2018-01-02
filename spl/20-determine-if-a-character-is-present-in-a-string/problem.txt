@@ -1,4 +1,8 @@
-Problem: Determine if a character is present in a string. 
+Write a C program to check whether a given character is present
+in the given string.
+
+
+******
 
 Description: Suppose, your input string is Mango and input character is m.
 
