@@ -1,0 +1,7 @@
+Suppose we have the following structure:
+struct student
+{
+int id;
+float mark;
+};
+Find the id of the students who got lowest marks.***
