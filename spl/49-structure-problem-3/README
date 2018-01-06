@@ -1,0 +1,9 @@
+Suppose ”Banani Police Station” has the following structure:
+struct criminal
+{
+int id;
+char name[80];
+char crime[50];
+};
+
+Find the name of the criminals who committed murder.****
