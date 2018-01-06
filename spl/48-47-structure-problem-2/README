@@ -1,0 +1,10 @@
+Suppose, pass mark in any subject is 40 and we have the follow-
+ing structure:
+
+struct student
+{
+int id;
+float marks[5];
+};
+
+Find the id of the students who failed in at least one subject.***
