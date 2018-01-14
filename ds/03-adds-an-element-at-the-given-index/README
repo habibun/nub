@@ -1,0 +1,7 @@
+adds an element at the given index 
+
+index = 4;
+item = 100;
+
+
+array = {7,2,3,9,5}
