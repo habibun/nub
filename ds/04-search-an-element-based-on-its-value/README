@@ -1,0 +1,5 @@
+Search an element based on its value.
+{7,2,3,9,5};
+
+
+int item = 3; //item to be searched
