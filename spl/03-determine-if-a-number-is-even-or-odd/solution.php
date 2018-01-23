@@ -1,8 +1,9 @@
 <?php 
 	$number=readline("Enter a number: ");
-	if($number<0){
-		echo $number. " is not a positive number";
-	}else{
-		echo $number. " is a positive number";
-	}
+if($number%2==0){
+	echo $number." is even number";
+}
+else{
+	echo $number." is a odd number";
+}
  ?>
