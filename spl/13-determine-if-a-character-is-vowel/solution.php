@@ -4,7 +4,8 @@ $vowels=array('a','e','i','o','u','A','E','I','O','U');
 $flag=0;
 for($i=0;$i<count($vowels);$i++){
     if($vowels[$i]==$char){
-        $flag=1;
+	    $flag=1;
+	    break;
     }
 }
 if($flag==1){
