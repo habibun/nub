@@ -1,21 +1,16 @@
 #include<iostream>
-
-
 using namespace std;
 
-
-int main() {
-
-
-string s = "hello";
-
-
-cout<<s;
-
+class Test {
+public:
+    Test(int num)
+    {
+        cout<<"Fired constructor "<<num;
+    }
+};
 
 
-
-
-
-
+int main()
+{
+    Test t(7);
 }
