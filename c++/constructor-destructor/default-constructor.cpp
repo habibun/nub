@@ -7,11 +7,7 @@ class Add
         int x,y,z;
 
     public:
-        Add()
-        {
-            x = 5;
-            y = 6;
-        }
+        Add();  //Default Constructor
 
         void getData()
         {
@@ -22,6 +18,12 @@ class Add
         void calculate();
         void display();
 };
+
+Add::Add()
+    {
+        x = 5;
+        y = 6;
+    }
 
 void Add::calculate()
 {
