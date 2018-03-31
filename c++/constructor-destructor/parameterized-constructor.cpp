@@ -8,22 +8,15 @@ class Add
 
     public:
         Add(int, int);  //Parameterized Constructor
-
-        void getData()
-        {
-            cout<<"Enter two numbers: ";
-            cin>>x>>y;
-        }
-
         void calculate();
         void display();
 };
 
-Add::Add(int a, int b)
-     {
-         x = a;
-         y = a;
-     }
+Add::Add(int a, int b)  //Parameterized Constructor
+{
+     x = a;
+     y = a;
+}
 
 void Add::calculate()
 {

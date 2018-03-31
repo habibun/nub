@@ -7,17 +7,28 @@ class Add
         int x,y,z;
 
     public:
+        Add();   //Default Constructor
+
         Add(int, int);  //Parameterized Constructor
+
         Add(Add &); //Copy Constructor
 
         void calculate();
         void display();
 };
 
+Add::Add()
+{
+    cout<<"Called Default Constructor"<<endl;
+}
+
+
 Add::Add(int a, int b)  //Parameterized Constructor
     {
         x = a;
         y = b;
+
+        cout<<"Called Parameterized Constructor"<<endl;
     }
 
 Add::Add(Add &p)    //Copy Constructor
@@ -26,6 +37,7 @@ Add::Add(Add &p)    //Copy Constructor
     y = p.y;
 
     cout<<"Value of x and y for new object: "<<x<<" and "<<y<<endl;
+    cout<<"Called Copy Constructor"<<endl;
 }
 
 void Add::calculate()
@@ -41,15 +53,10 @@ void Add::display()
 int main()
 {
     Add a(8, 10);
-    a.calculate();
-    a.display();
-
-    cout<<endl<<"=============================="<<endl;
 
     Add b(a);
     b.calculate();
     b.display();
-
 
     return 0;
 }
