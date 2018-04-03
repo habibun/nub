@@ -1,36 +1,46 @@
 #include<iostream>
 using namespace std;
 
-class Test {
-private:
-    int hen;
-    int duck;
-public:
-    Test(int a, int b)
-    {
-        hen = a;
-        duck = b;
-    }
+class A
+{
+    private:
+        int x, y;
+    public:
+        void set(int a, int b)
+        {
+            x = a;
+            y = b;
+        }
 
-    Test operator + (Test t)
-    {
-        t.hen = t.hen + hen;
-        t.duck = t.duck + duck;
-
-        return t;
-    }
-
-    void show()
-    {
-        cout<<"Total number of hens : "<<hen<<endl;
-        cout<<"Total number of ducks : "<<duck;
-    }
+        void show()
+        {
+            cout<<x<<endl;
+            cout<<y<<endl;
+        }
 };
+
+class B : public A
+{
+    private:
+        int z;
+    public:
+        B(int a)
+        {
+            z = a;
+        }
+
+        void showZ()
+        {
+            cout<<z<<endl;
+        }
+};
+
 
 
 int main()
 {
-    Test t(5,6), u(7, 8);
-    t = t+u;
-    t.show();
+    B b(5);
+    b.set(6,7);
+    b.show();
+    b.showZ();
 }
