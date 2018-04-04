@@ -1,29 +1,27 @@
 #include<iostream>
 using namespace std;
 
-class base {
-    public:
-        base() {
-            cout << "Constructing base\n";
-        }
-
-        ~base() {
-            cout << "Destructing base\n";
-        }
-};
-
 class base1 {
     public:
         base1() {
             cout << "Constructing base1\n";
         }
-
         ~base1() {
             cout << "Destructing base1\n";
         }
 };
 
-class derived: public base, public base1 {
+class base2 {
+    public:
+        base2() {
+            cout << "Constructing base2\n";
+        }
+        ~base2() {
+            cout << "Destructing base2\n";
+        }
+    };
+
+class derived: public base1, public base2 {
     public:
         derived() {
             cout << "Constructing derived\n";
@@ -31,8 +29,9 @@ class derived: public base, public base1 {
         ~derived() {
             cout << "Destructing derived\n";
         }
-};
+    };
 
 int main() {
     derived ob;
+    return 0;
 }
