@@ -11,6 +11,7 @@ class Add {
 Add :: Add(int a, int b) {
     x=a; y=b;
 }
+
 int calculate(Add p) {
     return(p.x+p.y);
 }
@@ -19,5 +20,5 @@ int main() {
     Add a(5, 6);
     cout<<calculate(a);
 
-return 0;
+    return 0;
 }
