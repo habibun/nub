@@ -1,29 +1,31 @@
 #include<iostream>
 using namespace std;
 
-class B {
+class TwoValues {
+    int a, b;
     public:
-        virtual void show() {
-            cout<<"in base show"<<endl;
+        TwoValues(int x, int y){
+            a = x;
+            b = y;
         }
+        friend class Min;
 };
 
-class D:public B {
+class Min {
     public:
-        void show() {
-            cout<<"in derived show"<<endl;
-        }
+        int min(TwoValues t);
+};
+
+int Min::min(TwoValues t)
+{
+    return t.a < t.b ? t.a : t.b;
+
 };
 
 int main() {
-    B b, *bp;
-    bp = &b;
-    D d;
-
-    bp->show();
-
-    bp = &d;
-    bp->show();
+    TwoValues tv(8, 5);
+    Min m;
+    cout<<m.min(tv);
 
     return 0;
 }
