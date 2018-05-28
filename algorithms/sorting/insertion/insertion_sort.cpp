@@ -14,13 +14,6 @@ int main()
         cin>>arr[i];
     }
 
-    cout<<"Array elements before sorting: "<<endl;
-    for(i =0; i < n; i++){
-        cout<<arr[i]<<' ';
-    }
-
-    cout<<endl;
-
     insertionSort(arr, n);
 
     cout<<"Array elements after sorting: "<<endl;
