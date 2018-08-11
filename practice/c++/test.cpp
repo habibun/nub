@@ -1,11 +1,44 @@
 #include<iostream>
 
 using namespace std;
+void insertionSort(int [], int);
 
 int main()
 {
-    cout<<"ts";
-    cout<<"ts";
+    int arr[100], i, n;
+
+    cout<<"Enter the length of the array: ";
+    cin>>n;
+
+    cout<<"Enter array elements: " ;
+    for(i=0; i < n; i++) {
+        cin>>arr[i];
+    }
+
+    insertionSort(arr, n);
+
+    cout<<"Array elements after sorting:"<<endl;
+    for(i=0; i < n; i++) {
+        cout<<arr[i]<<' ';
+    }
+
 
     return 0;
+}
+
+void insertionSort(int arr[], int n)
+{
+    int i,key, j;
+
+    for (i = 1; i < n; i++) {
+        key = arr[i];
+        j = i -1;
+
+        while ((j >= 0) and (arr[j] > key)) {
+            arr[j+1] = arr[j];
+            j = j-1;
+        }
+
+        arr[j + 1] = key;
+    }
 }
