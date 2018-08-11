@@ -6,7 +6,7 @@ void insertionSort(int [], int);
 int main()
 {
     int arr[100], i, n;
-    cout<<"Enter number of elements: "<<endl;
+    cout<<"Enter the length of the array: "<<endl;
     cin>>n;
 
     cout<<"Enter array elements: "<<endl;
