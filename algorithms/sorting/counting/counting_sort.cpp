@@ -12,7 +12,7 @@ int main()
     printf("Enter the length of input: ");
     cin>>n;
 
-    cout<<"Enter the Aay elements: ";
+    cout<<"Enter the array elements: ";
     for(i = 1; i <=n; i++){
         cin>>A[i];
 
@@ -22,11 +22,6 @@ int main()
     }
 
     countingSort(A, k, n);
-
-    printf("\nThe Sorted Aay is : ");
-    for(i=1; i <=n; i++){
-        cout<<A[i]<<' ';
-    }
 
     return 0;
 }
@@ -54,7 +49,7 @@ int countingSort(int A[], int k, int n)
         C[A[j]] = C[A[j]] -1;
     }
 
-    printf("\nThe Sorted Aay is : ");
+    printf("\nThe Sorted array is : ");
     for(i=1; i <=n; i++){
         cout<<B[i]<<' ';
     }
