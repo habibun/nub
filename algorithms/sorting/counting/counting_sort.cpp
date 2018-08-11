@@ -1,28 +1,38 @@
 #include<iostream>
 #include<stdio.h>
 using namespace std;
-int counting_sort(int A[], int k, int n);
+
+int countingSort(int [], int, int);
 
 int main()
 {
-    int n, i, k = 0, A[6];
-    printf("\t\tCOUNTING SORT \n\n");
-    printf("Enter the number of input: ");
-    scanf("%d", &n);
-    printf("\n\n Enter the elements to be sorted: \n");
+    int n, i, k = 0, arr[6];
+    cout<<("\t\t\t\t COUNTING SORT \n\n");
+
+    printf("Enter the length of input: ");
+    cin>>n;
+
+    cout<<"Enter the array elements: ";
     for(i = 1; i <=n; i++){
-        scanf("%d", &A[i]);
-        if(A[i] > k){
-            k = A[i];
+        cin>>arr[i];
+
+        if(arr[i] > k){
+            k = arr[i];
         }
     }
-    counting_sort(A, k,n);
+
+    countingSort(arr, k, n);
+
+    printf("\nThe Sorted array is : ");
+    for(i=1; i <=n; i++){
+        cout<<arr[i]<<' ';
+    }
 
     return 0;
 }
 
 
-int counting_sort(int A[], int k, int n)
+int countingSort(int arr[], int k, int n)
 {
     int i, j;
 
@@ -32,7 +42,7 @@ int counting_sort(int A[], int k, int n)
     }
 
     for (j=1; j <= n; j++){
-        C[A[j]] = C[A[j]] + 1;
+        C[arr[j]] = C[arr[j]] + 1;
     }
 
     for (i=1; i <= k; i++){
@@ -40,12 +50,12 @@ int counting_sort(int A[], int k, int n)
     }
 
     for (j=n; j >= 1; j--){
-        B[C[A[j]]] = A[j];
-        C[A[j]] = C[A[j]] -1;
+        B[C[arr[j]]] = arr[j];
+        C[arr[j]] = C[arr[j]] -1;
     }
 
-    printf("\nThe Sorted array is :\n");
+    printf("\nThe Sorted array is : ");
     for(i=1; i <=n; i++){
-        printf("\t%d", B[i]);
+        cout<<B[i]<<' ';
     }
 }
