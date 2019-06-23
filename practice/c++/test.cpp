@@ -1,44 +1,55 @@
 #include<iostream>
-
 using namespace std;
-void insertionSort(int [], int);
+
+void countingSort(int [], int, int);
 
 int main()
 {
-    int arr[100], i, n;
-
-    cout<<"Enter the length of the array: ";
+    int n, i, k = 0;
+    printf("Enter the length of input: ");
     cin>>n;
 
-    cout<<"Enter array elements: " ;
-    for(i=0; i < n; i++) {
-        cin>>arr[i];
+    int A[n];
+    cout<<"input the array elements: ";
+    for(i=1; i <= n; i++){
+        cin>>A[i];
+
+        if(A[i] > k){
+            k = A[i];
+        }
     }
 
-    insertionSort(arr, n);
-
-    cout<<"Array elements after sorting:"<<endl;
-    for(i=0; i < n; i++) {
-        cout<<arr[i]<<' ';
-    }
-
+    countingSort(A, k, n);
 
     return 0;
 }
 
-void insertionSort(int arr[], int n)
+void countingSort(int A[], int k, int n)
 {
-    int i,key, j;
 
-    for (i = 1; i < n; i++) {
-        key = arr[i];
-        j = i -1;
+    int i, j;
 
-        while ((j >= 0) and (arr[j] > key)) {
-            arr[j+1] = arr[j];
-            j = j-1;
-        }
-
-        arr[j + 1] = key;
+    int B[n], C[500];
+    for (i=1; i <= k; i++){
+        C[i] = 0;
     }
+
+    for (j=1; j <= n; j++){
+        C[A[j]] = C[A[j]] + 1;
+    }
+
+    for (i=1; i <= k; i++){
+        C[i] = C[i] + C[i-1];
+    }
+
+    for (j=n; j >= 1; j--){
+        B[C[A[j]]] = A[j];
+        C[A[j]] = C[A[j]] -1;
+    }
+
+    printf("\nThe Sorted array is : ");
+    for(i=1; i <=n; i++){
+        cout<<B[i]<<' ';
+    }
+
 }
