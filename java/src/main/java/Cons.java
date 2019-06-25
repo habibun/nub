@@ -21,7 +21,7 @@ public class Cons {
 
   // Main method
   public static void main(String[ ] args) {
-      Person p = new Person();
+      Encapsulation p = new Encapsulation();
       p.setName("Jony");
       String name = p.getName();
       System.out.println(name);

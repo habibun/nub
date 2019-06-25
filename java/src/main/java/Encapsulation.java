@@ -8,7 +8,7 @@
  *
  * @author habibun
  */
-public class Person {
+public class Encapsulation {
    private String name;
    
    public String getName()
