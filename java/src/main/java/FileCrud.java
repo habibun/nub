@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 public class FileCrud {
     public static void main(String[] args)
@@ -65,7 +66,7 @@ public class FileCrud {
                 String data = scanner.nextLine();
                 System.out.println(data);
             }
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             System.out.println("An error occured.");
             e.printStackTrace();
         }
