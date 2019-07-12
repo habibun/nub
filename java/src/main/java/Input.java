@@ -13,10 +13,18 @@ import java.util.Scanner;
 public class Input {
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter username");
+        Scanner sc = new Scanner(System.in);
         
-        String username = scanner.nextLine();
-        System.out.println("Your username is " + username);
+        
+        System.out.println("Enter your roll no: ");
+        int rollNo = sc.nextInt();
+        
+        System.out.println("Enter your name : ");
+        String name = sc.next();
+        
+        System.out.println("Enter your fee : ");
+        float fee = sc.nextFloat();
+        
+        System.out.println("Roll No: " +rollNo + " name : " + name + " fee : " +fee);
     }
 }
