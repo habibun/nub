@@ -9,5 +9,12 @@
  * @author habibun
  */
 public class Test {
-    
+    public static void main(String[] args)
+    {
+        ThreadDemo td1 = new ThreadDemo("Thread-1");
+        td1.start();
+        
+        ThreadDemo td2 = new ThreadDemo("Thread-2");
+        td2.start();
+    }
 }
