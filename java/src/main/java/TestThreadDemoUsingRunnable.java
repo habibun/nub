@@ -49,9 +49,10 @@ class ThreadDemoUsingRunnable implements Runnable{
 
 public class TestThreadDemoUsingRunnable {
     public static void main(String args[]) {
-    ThreadDemoUsingRunnable R1 = new ThreadDemoUsingRunnable( "Thread-1");
-    R1.start();
+        ThreadDemoUsingRunnable R1 = new ThreadDemoUsingRunnable( "Thread-1");
+        R1.start();
 
-    ThreadDemoUsingRunnable R2 = new ThreadDemoUsingRunnable( "Thread-2");
-    R2.start();
+        ThreadDemoUsingRunnable R2 = new ThreadDemoUsingRunnable( "Thread-2");
+        R2.start();
+    }
 }

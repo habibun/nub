@@ -36,7 +36,7 @@ class ThreadDemoUsingThread extends Thread{
     
     public void start()
     {
-        System.out.println("Startting " + threadName);
+        System.out.println("Starting " + threadName);
         
         if(thread == null) {
             thread = new Thread(this, threadName);
@@ -49,9 +49,10 @@ class ThreadDemoUsingThread extends Thread{
 
 public class TestThreadDemoUsingThread {
     public static void main(String args[]) {
-    ThreadDemoUsingThread R1 = new ThreadDemoUsingThread( "Thread-1");
-    R1.start();
+        ThreadDemoUsingThread R1 = new ThreadDemoUsingThread( "Thread-1");
+        R1.start();
 
-    ThreadDemoUsingThread R2 = new ThreadDemoUsingThread( "Thread-2");
-    R2.start();
+        ThreadDemoUsingThread R2 = new ThreadDemoUsingThread( "Thread-2");
+        R2.start();
+    }
 }
