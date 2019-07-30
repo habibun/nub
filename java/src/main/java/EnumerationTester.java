@@ -23,6 +23,7 @@ public class EnumerationTester {
         dayNames.add("Thursday");
         dayNames.add("Friday");
         dayNames.add("Saturday");
+        
         days = dayNames.elements();
         
         while (days.hasMoreElements()) {
