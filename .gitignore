@@ -1,2 +1,6 @@
 .idea
 /ipcv/class2/target/
+/ipcv/project/target/
+/ipcv/gradleproject1/.gradle/
+/ipcv/gradleproject1/build/
+/ipcv/mavenproject1/target/
